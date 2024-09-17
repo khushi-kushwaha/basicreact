@@ -1,7 +1,13 @@
+import React from 'react';
+
 const App = () => {
-  return(
+  // Access the API key from environment variables
+  const apiKey = import.meta.env.VITE_API_KEY;
+
+  return (
     <div>
-      <h1>hello from react bolier plate!</h1>
+      <h1>Hello from React boilerplate!</h1>
+      <p>Your API Key: {apiKey}</p>
     </div>
   );
 };
